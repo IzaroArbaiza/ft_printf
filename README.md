@@ -44,9 +44,13 @@ cd ft_printf && make
 
 ### 👉🏼 Usage
 ```C
-#include "libft.h"
+#include "ft_printf.h"
 ```
 and then don't forget to compile against the library
 ```Bash
-gcc *your files* libft/libft.a -Ilibft
+gcc your_file.c libftprintf.a -I. && ./a.out
+```
+example:
+```C
+ft_printf("Hello %s, number is %+05d and hex %#x\n", "world", 42, 255);
 ```
